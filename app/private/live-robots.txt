@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /login
+Disallow: /manageItem
+Disallow: /allStories
+Disallow: /manageAlerts
+Disallow: /manageGlossary
+Disallow: /manageGlossaryTerm
+Disallow: /manageAlerts
+Disallow: /manageAlert
+Disallow: /register
