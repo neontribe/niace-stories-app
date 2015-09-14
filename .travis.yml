@@ -36,6 +36,5 @@ notifications:
   email:
     recipients:
     - rob@neontribe.co.uk
-    - heydon@neontribe.co.uk
     on_sucess: change
     on_failure: change
