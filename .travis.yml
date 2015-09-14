@@ -22,7 +22,7 @@ before_deploy:
 - rm -rf node_modules
 - npm run buildProdDeps
 - npm install --production
-- 'test "$TRAVIS_BRANCH" = "master" && mv app/private/live-robots.txt app/public/robots.txt'
+- 'bash -c "test \"$TRAVIS_BRANCH\" = \"master\" && mv app/private/live-robots.txt app/public/robots.txt" ; exit 0'
 deploy:
   provider: heroku
   app:
