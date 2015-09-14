@@ -41,9 +41,9 @@ The app _should_ update itself each time it's ran, to [get the code from the liv
 
 1. make sure your branches are up to date
 2. get into master and the version you would like to release at
-3. match the version strings in package.json and app/mobile-config.js
+3. match the [version strings in package.json](https://docs.npmjs.com/cli/version) and app/mobile-config.js
 4. [export current database for offline](#exporting-database-ready-to-be-consumed-by-offline-app)
-5. run ```$ npm run buildForDeploy ``` 
+5. run ```$ npm run buildForLiveDeploy ``` 
 6. [align the android apk in deploy/android/unaligned.apk](https://github.com/meteor/meteor/wiki/How-to-submit-your-Android-app-to-Play-Store)
   - [better docs](http://developer.android.com/tools/publishing/app-signing.html#signing-manually) 
 7. open the ios xcode project found in deploy/ios/ and build relevant files
