@@ -15,7 +15,7 @@ These both point to the same heroku instance
 - http://inspire-me.org.uk
 
 # Travis Status
-[![Travis status](https://travis-ci.org/Heydon/niace-stories-app.svg)](https://travis-ci.org/Heydon/niace-stories-app)
+[![Travis status](https://travis-ci.orgneontribe/niace-stories-app.svg)](https://travis-ci.orgneontribe/niace-stories-app)
 
 ## Setup
 

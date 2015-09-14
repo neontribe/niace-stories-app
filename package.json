@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Heydon/niace-stories-app.git"
+    "url": "https://github.comneontribe/niace-stories-app.git"
   },
   "bugs": {
-    "url": "https://github.com/Heydon/niace-stories-app/issues"
+    "url": "https://github.comneontribe/niace-stories-app/issues"
   },
-  "homepage": "https://github.com/Heydon/niace-stories-app",
+  "homepage": "https://github.comneontribe/niace-stories-app",
   "dependencies": {
     "mongodb": "^1.4.23",
     "body-parser": "^1.10.0"
