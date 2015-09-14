@@ -51,6 +51,7 @@ App.launchScreens({
 
 App.setPreference('StatusBarOverlaysWebView', 'false');
 App.setPreference('StatusBarBackgroundColor', '#000000');
+App.setPreference('deployment-target', '7.0');
 
 App.accessRule('http://www.niace.org.uk/*', {launchExternal: true});
 App.accessRule('https://www.niace.org.uk/*', {launchExternal: true});
