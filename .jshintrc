@@ -37,6 +37,7 @@
 		"removeInspiringStory": true,
 		"setTimeout": true,
 		"Config": true,
-		"App": true
+		"App": true,
+		"jQuery": true
 	} 
 }

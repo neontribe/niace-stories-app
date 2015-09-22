@@ -1,6 +1,6 @@
 {
   "name": "niace-pstories-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The alpha application for NIACE, running on Meteor.",
   "main": "",
   "directories": {
@@ -14,8 +14,8 @@
     "genStoryFixtures": "npm run start > /dev/null; mongo 127.0.0.1:3001/meteor --quiet --eval \"printjson(db.themes.find().toArray())\" | ./scripts/fillout.js 150 > app/private/data/stories.json",
     "test": "cd app && laika",
     "jshint": "jshint ./",
-    "buildForLiveDeploy": "cd app && meteor build --directory ../deploy --server http://inspire-me-live.herokuapp.com",
-    "buildForDeploy": "cd app && meteor build --directory ../deploy --server http://inspire-me-dev.herokuapp.com",
+    "buildForLiveDeploy": "cd app && meteor build --directory ../deploy --server=http://inspire-me-live.herokuapp.com",
+    "buildForDeploy": "cd app && meteor build --directory ../deploy --server=http://inspire-me-dev.herokuapp.com",
     "buildProdDeps": "cd deploy/bundle/programs/server && npm install",
     "signAndroid": "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore niace.keystore ./deploy/android/unaligned.apk inspire-me",
     "alignAndroid": "~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign -v 4 ./deploy/android/unaligned.apk inspire-me.apk"

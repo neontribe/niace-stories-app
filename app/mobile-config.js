@@ -7,7 +7,7 @@ App.info({
 	author: 'NIACE',
 	email: 'kevin.campbellwright@niace.org.uk',
 	website: 'http://www.niace.org.uk',
-	version: '1.0.0'
+	version: '1.0.1'
 });
 
 App.icons({
@@ -53,13 +53,13 @@ App.setPreference('StatusBarOverlaysWebView', 'false');
 App.setPreference('StatusBarBackgroundColor', '#000000');
 App.setPreference('deployment-target', '7.0');
 
-App.accessRule('http://www.niace.org.uk/*', {launchExternal: true});
-App.accessRule('https://www.niace.org.uk/*', {launchExternal: true});
-App.accessRule('http://www.neontribe.co.uk/*', {launchExternal: true});
-App.accessRule('https://www.neontribe.co.uk/*', {launchExternal: true});
+App.accessRule('http://www.niace.org.uk/*', true);
+App.accessRule('https://www.niace.org.uk/*', true);
+App.accessRule('http://www.neontribe.co.uk/*', true);
+App.accessRule('https://www.neontribe.co.uk/*', true);
 
-App.accessRule('http://inspire-me-live.herokuapp.com/*', {launchExternal: false});
-App.accessRule('https://inspire-me-live.herokuapp.com/*', {launchExternal: false});
-App.accessRule('http://www.google-analytics.com/*', {launchExternal: false});
-App.accessRule('https://www.google-analytics.com/*', {launchExternal: false});
+App.accessRule('http://inspire-me-live.herokuapp.com/*', false);
+App.accessRule('https://inspire-me-live.herokuapp.com/*', false);
+App.accessRule('http://www.google-analytics.com/*', false);
+App.accessRule('https://www.google-analytics.com/*', false);
 App.accessRule('http://meteor.local/*');

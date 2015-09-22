@@ -97,7 +97,11 @@
 		<div class="next-steps">
 			<h2>Next Steps</h2>
 			<p>If you have similar issues, you can do something about it. Click on these links to find help:</p>
-			{{#markdown}}{{#autolink}}{{{help}}}{{/autolink}}{{/markdown}}
+			<div class="markup-markdown">
+				{{#markdown}}{{#autolink}}{{{help}}}{{/autolink}}{{/markdown}}
+			</div>
+			{{!-- TODO fix this nasty stuff --}}
+			<script type="text/javascript">jQuery('.markup-markdown a').each(function() {this.target = '_blank';});</script>
 		</div>
 	{{/if}}
 	<div class="more-inspiration">
