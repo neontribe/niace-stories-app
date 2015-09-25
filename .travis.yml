@@ -17,10 +17,9 @@ script:
 - npm run jshint
 before_deploy:
 - ./scripts/packageOfflineDatabase.js > app/client/offline.js
-# we need to copy across the correct robots.txt before building
-- if [ "$TRAVIS_BRANCH" == 'master' ]; then cp app/private/live-robots.txt app/public/robots.txt ; fi
-- if [ "$TRAVIS_BRANCH" == 'master' ]; then npm run buildForLiveDeploy ; fi
-- if [ "$TRAVIS_BRANCH" == 'develop' ]; then npm run buildForDevDeploy ; fi
+- "if [ \"$TRAVIS_BRANCH\" == 'master' ]; then cp app/private/live-robots.txt app/public/robots.txt ; fi"
+- "if [ \"$TRAVIS_BRANCH\" == 'master' ]; then npm run buildForLiveDeploy ; fi"
+- "if [ \"$TRAVIS_BRANCH\" == 'develop' ]; then npm run buildForDevDeploy ; fi"
 - rm -rf app
 - rm -rf node_modules
 - npm run buildProdDeps
@@ -33,7 +32,7 @@ deploy:
   strategy: api
   skip_cleanup: true
   api_key:
-    secure: RBNskLVHmvviRQZd9qiDGfkSdwsq9/Q/+ns2z+ilXa0gcSnDcYUvx7Ynh/eZcSZm2NIpkz5C3MmdG8pTwOtyl25N+g5eqD0jlWsmwIE4TtQ+3bJk0paNxi8Uh3ulL6ddi6KQgtI5DLbJnkzT26WI+Oj2tT3U3B/5NtMsd+3gmkQ=
+    secure: xIgO26S07cyAzG+3EW6PCNT6pPMY2NFmBXEepvZkTdBmxiEppXg2ne4zUJiX8BBSh6Furp0v035pH9aCB7ppc2bjHzNXqe0kWpYGcjZh+V8CBzGvgJQO0/6RrcZgRd4HluSVRVvbAqzdSTeHXScExOsYR0/eEXR9cAq337WqkAWXLvYESKZbUn+THRVCqOV46e9jlea+dKa9oHT6pyC9hQXjk2ZmWaGMNaE3R09PGJnS8Nalk/mqha3x0LuBCPDdEtgKrLgEY2e/2ddm5QQ4Gn8NKXWKBUx6Z1Yey+k0+P89Qr5NpECnxwypN49PBxFqR+6EERlpHWOrpxkcpYWf8aAOrYF91jxEVWoNc2D1X288loVZbrrBMu8b/Cylv7Ho8XHjaPBoC97c9ehZSpPyIAYc70H1a+GOl6iYa9z8XIrCKA867z1HkxH7M2utBxpzV+48eMGwaredMh1esD66k/XLCsPQK5LjCkA0zJSALQF+JAsoqUTOaYH2gQuBaiOh8h05w9XLH+xkL076EybQeLtfqemp1iDm/X0Kn/EijofvMej7ox5WKPfwgfeuWaOfco3cJgHIrhZvtLXWOqEj5NAYfnIRJy535/6NrnpKtkt+k2M0MsVlrFPAZ1A4Bl8StV1xDKvQSWPqdgxsSd/9dhoHjVAr8xBUpubZf8fnkxM=
 notifications:
   email:
     recipients:
