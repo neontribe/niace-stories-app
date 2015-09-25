@@ -35,8 +35,9 @@ Template.banner.events({
 Template.layout.events({
 	'click a': function(evt) {
 		var anc = evt.currentTarget;
-		if(anc.hostname !== window.location.hostname) {
+		if(anc.hostname && anc.hostname !== window.location.hostname) {
 			anc.target = '_blank';
 		}
 	}
 });
+

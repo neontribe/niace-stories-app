@@ -17,8 +17,10 @@ script:
 - npm run jshint
 before_deploy:
 - ./scripts/packageOfflineDatabase.js > app/client/offline.js
-- npm run buildForDeploy
-- test "$TRAVIS_BRANCH" = "master" && mv app/private/live-robots.txt app/public/robots.txt ; exit 0
+# we need to copy across the correct robots.txt before building
+- if [ "$TRAVIS_BRANCH" == 'master' ]; then cp app/private/live-robots.txt app/public/robots.txt ; fi
+- if [ "$TRAVIS_BRANCH" == 'master' ]; then npm run buildForLiveDeploy ; fi
+- if [ "$TRAVIS_BRANCH" == 'develop' ]; then npm run buildForDevDeploy ; fi
 - rm -rf app
 - rm -rf node_modules
 - npm run buildProdDeps
