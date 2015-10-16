@@ -26,7 +26,8 @@ run_it () {
 # ~/.meteor, replacing whatever is already there. (~/.meteor is only a cache of
 # packages and package metadata; no personal persistent data is stored there.)
 
-RELEASE="1.2.0.4-logging.0"
+# changed this, the new version doesn't exist
+RELEASE="1.2.0.2"
 
 
 # Now, on to the actual installer!
