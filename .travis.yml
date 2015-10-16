@@ -9,7 +9,7 @@ branches:
 services:
 - mongodb
 before_install:
-- curl https://install.meteor.com/ | sh
+- ./scripts/install_meteor.sh
 install:
 - npm install --development
 script:
