@@ -7,7 +7,7 @@ App.info({
 	author: 'NIACE',
 	email: 'kevin.campbellwright@niace.org.uk',
 	website: 'http://www.niace.org.uk',
-	version: '1.0.2'
+	version: '1.0.3'
 });
 
 App.icons({
@@ -56,6 +56,7 @@ App.setPreference('deployment-target', '7.0');
 // seems OK
 App.accessRule('*', {launchExternal: true});
 
+App.accessRule('https://www.youtube.com/embed/*', {launchExternal: false});
 App.accessRule('http://inspire-me-live.herokuapp.com/*', {launchExternal: false});
 App.accessRule('https://inspire-me-live.herokuapp.com/*', {launchExternal: false});
 App.accessRule('http://meteor.local/*');

@@ -1,6 +1,6 @@
 {
   "name": "niace-pstories-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The alpha application for NIACE, running on Meteor.",
   "main": "",
   "directories": {
