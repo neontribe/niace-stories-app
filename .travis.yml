@@ -17,7 +17,7 @@ script:
 - npm run jshint
 before_deploy:
 - ./scripts/packageOfflineDatabase.js > app/public/offline.js
-- cd app && meteor remove-platform ios android
+- cd app && meteor remove-platform ios android && cd ../
 - "if [ \"$TRAVIS_BRANCH\" == 'master' ]; then cp app/private/live-robots.txt app/public/robots.txt ; fi"
 - "if [ \"$TRAVIS_BRANCH\" == 'master' ]; then npm run buildForLiveDeploy ; fi"
 - "if [ \"$TRAVIS_BRANCH\" == 'develop' ]; then npm run buildForDevDeploy ; fi"
