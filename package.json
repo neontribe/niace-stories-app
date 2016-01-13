@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.comneontribe/niace-stories-app.git"
+    "url": "https://github.com/neontribe/niace-stories-app.git"
   },
   "bugs": {
-    "url": "https://github.comneontribe/niace-stories-app/issues"
+    "url": "https://github.com/neontribe/niace-stories-app/issues"
   },
-  "homepage": "https://github.comneontribe/niace-stories-app",
+  "homepage": "http://inspire-me-live.herokuapp.com",
   "dependencies": {
   },
   "devDependencies": {
