@@ -1,6 +1,11 @@
 Stories = new Meteor.Collection('stories');
 Ground.Collection( Stories );
 
+var emailTemplate = Asset.getText('email-template.html');
+function filloutTemplate(obj) {
+
+}
+
 Meteor.methods({
 	share: function( story ) {
 
@@ -24,6 +29,13 @@ Meteor.methods({
 			story = _.extend(_.pick(story, 'name', 'story'), {
 				published: false,
 				submitted: new Date().getTime()
+			});
+
+			Email.send({
+				from: 'no-reply@inspire-me.org.uk',
+				to: 'rob@neontribe.co.uk',
+				subject: 'A new story has been added',
+				html: 'Hi there, you\'re receiving this mail because you'
 			});
 
 			var storyId = Stories.insert(story);

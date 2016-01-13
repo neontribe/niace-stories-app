@@ -38,6 +38,8 @@
 		"setTimeout": true,
 		"Config": true,
 		"App": true,
-		"jQuery": true
-	} 
+		"jQuery": true,
+		"Email": true,
+		"Asset": true
+	}
 }
