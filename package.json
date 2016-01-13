@@ -31,7 +31,6 @@
   "dependencies": {},
   "devDependencies": {
     "jshint": "^2.8.0",
-    "laika": "^0.3.10",
     "mongoose": "^4.3.5"
   }
 }
