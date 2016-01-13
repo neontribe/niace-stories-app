@@ -186,7 +186,7 @@ dd + dt {
   border-radius: 0.125em;
 }
 
-[aria-label="main menu"] li:first-child a, 
+[aria-label="main menu"] li:first-child a,
 [aria-label="main menu"] li:last-child a {
   padding: 1em 0.5em;
 }
@@ -302,7 +302,7 @@ span[aria-hidden] {
 	padding: 0.5em;
 }
 
-[aria-label="submenu"] a:hover, 
+[aria-label="submenu"] a:hover,
 [aria-label="submenu"] a:focus {
 	background: #377F41;
 }
@@ -332,7 +332,7 @@ nav a[href="/me"] {
 	margin: 0 25px;
 }
 
-nav a[href="/add"]:hover, nav a[href="/add"]:focus, 
+nav a[href="/add"]:hover, nav a[href="/add"]:focus,
 nav a[href="/me"]:hover, nav a[href="/me"]:focus {
 	border-color: #111;
 }
@@ -344,7 +344,7 @@ li.home {
 /**************************************************************
 
 GRIDS
-Here, we generate flexible and self-correcting grids based on a 
+Here, we generate flexible and self-correcting grids based on a
 list of column variants
 
 Example markup (a three column grid):
@@ -473,7 +473,7 @@ button, .button-shaped {
   cursor: pointer;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button-shaped:hover,
 .button-shaped:focus {
@@ -528,7 +528,7 @@ ANIMATIONS
 	animation: spin 0.33s 2;
 }
 
-button::-moz-focus-inner { 
+button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -645,7 +645,7 @@ legend + * {
 
 [type="checkbox"][disabled] + span:before {
   box-shadow: 0 0 0 2px #888;
-} 
+}
 
 [for="help"] {
   margin-top: 2.25em;
@@ -916,9 +916,9 @@ ARCHIVE PAGES
   padding: 0.25em 0.5em;
   display: block;
   border: 0;
-} 
+}
 
-.keywords a:hover, .keywords a:focus, 
+.keywords a:hover, .keywords a:focus,
 .pathwayThemes a:hover, .pathwayThemes a:focus {
   background: #111;
 }
@@ -1019,7 +1019,7 @@ MESSAGES
   font-style: normal;
 }
 
-[aria-label="close"]:hover, 
+[aria-label="close"]:hover,
 [aria-label="close"]:focus {
   background: transparent;
   color: #377F41;
@@ -1058,6 +1058,44 @@ MESSAGES
 .admin button:hover, .admin button:focus {
   background: #f9f9f9;
   color: #111;
+}
+
+.watcher-list {
+  border: 3px solid #111;
+  padding: 1em;
+}
+
+.watcher-list ul {
+  margin: 1em;
+  padding: 0;
+}
+
+.watcher-list ul button {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.watcher-list form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watcher-list form button {
+  font-size: 0.8em;
+  padding: 0.5em;
+  margin: 0;
+  float: right;
+}
+
+.watcher-list form:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /* INSPIRING ME
@@ -1123,7 +1161,7 @@ MESSAGES
 }
 
 @media all and (max-width: 700px) {
-  
+
   .teaser {
     margin-left: 0;
     margin-right: 0;
@@ -1208,7 +1246,7 @@ MESSAGES
     width: 100%;
     padding: 0;
   }
-  
+
   #add .middle button {
     margin-top: 0.75em
   }

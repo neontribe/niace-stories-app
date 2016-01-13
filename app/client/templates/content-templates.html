@@ -151,6 +151,9 @@
 	<div role="alert">
 		{{> message}}
 	</div>
+	<div>
+		{{> watchers}}
+	</div>
 	<div class="manager-list">
 		{{> storiesList}}
 	</div>
@@ -234,7 +237,7 @@
 	<ul class="inspiring-me-themes theme-list">
 		{{#each themes}}
 			<li class="expando-parent collapsed {{#if size stories}}has-stories{{else}}no-stories{{/if}}">
-				<h2>{{themeName}} 
+				<h2>{{themeName}}
 					{{#if size stories}}
 						<span class="count">({{size stories}} saved)</span>
 					{{/if}}
