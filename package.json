@@ -7,7 +7,7 @@
     "test": "test"
   },
   "engines": {
-    "node": "4.2.3"
+    "node": "0.10.x"
   },
   "scripts": {
     "start": "cd app && meteor",
@@ -28,11 +28,10 @@
     "url": "https://github.com/neontribe/niace-stories-app/issues"
   },
   "homepage": "http://inspire-me-live.herokuapp.com",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "jshint": "^2.9.1-rc3",
     "mongodb": "^2.1.4",
-    "jshint": "^2.8.0",
     "mongoose": "^4.3.5"
   }
 }
