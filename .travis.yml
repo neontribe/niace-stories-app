@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '0.10'
+- '4.2.3'
 sudo: true
 branches:
   only:
@@ -9,7 +9,8 @@ branches:
 services:
 - mongodb
 before_install:
-- ./scripts/install_meteor.sh
+#- ./scripts/install_meteor.sh
+- curl https://install.meteor.com/ | sh
 install:
 - npm install --development
 script:

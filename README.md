@@ -1,8 +1,6 @@
 niace-stories-app
 =================
 
-The alpha application for NIACE, running on Meteor.
-
 # Dev site
 
 http://inspire-me-dev.herokuapp.com/
@@ -15,13 +13,15 @@ These both point to the same heroku instance
 - http://inspire-me.org.uk
 
 # Travis Status
-[![Travis status](https://travis-ci.orgneontribe/niace-stories-app.svg)](https://travis-ci.orgneontribe/niace-stories-app)
+[![Travis status](https://travis-ci.org/neontribe/niace-stories-app.svg)](https://travis-ci.org/neontribe/niace-stories-app)
 
 ## Setup
 
 - Clone Repo
+- $ nvm install
+- $ npm install
 - Install [meteor](https://www.meteor.com/)
-- Run meteor
+- $ npm start
 
 ### workflow
 
@@ -43,9 +43,9 @@ The app _should_ update itself each time it's ran, to [get the code from the liv
 2. get into master and the version you would like to release at
 3. match the [version strings in package.json](https://docs.npmjs.com/cli/version) and app/mobile-config.js
 4. [export current database for offline](#exporting-database-ready-to-be-consumed-by-offline-app)
-5. run ```$ npm run buildForLiveDeploy ``` 
+5. run ```$ npm run buildForLiveDeploy ```
 6. [align the android apk in deploy/android/unaligned.apk](https://github.com/meteor/meteor/wiki/How-to-submit-your-Android-app-to-Play-Store)
-  - [better docs](http://developer.android.com/tools/publishing/app-signing.html#signing-manually) 
+  - [better docs](http://developer.android.com/tools/publishing/app-signing.html#signing-manually)
 7. open the ios xcode project found in deploy/ios/ and build relevant files
 8. upload both the IOS ipa and android apk to their relevant store pages
 
