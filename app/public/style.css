@@ -1072,6 +1072,44 @@ MESSAGES
   color: #111;
 }
 
+.watcher-list {
+  border: 3px solid #111;
+  padding: 1em;
+}
+
+.watcher-list ul {
+  margin: 1em;
+  padding: 0;
+}
+
+.watcher-list ul button {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.watcher-list form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watcher-list form button {
+  font-size: 0.8em;
+  padding: 0.5em;
+  margin: 0;
+  float: right;
+}
+
+.watcher-list form:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /* INSPIRING ME
 ------------------------------------------------------- */
 

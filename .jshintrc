@@ -38,6 +38,9 @@
 		"setTimeout": true,
 		"Config": true,
 		"App": true,
-		"jQuery": true
-	} 
+		"jQuery": true,
+		"Email": true,
+		"Assets": true,
+		"Watchers": true
+	}
 }

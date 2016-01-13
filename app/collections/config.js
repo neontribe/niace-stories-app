@@ -11,16 +11,13 @@ Ground.Collection( Config );
 
 Config.allow({
 	insert: function() {
-		return false;
+		return !!Meteor.user();
 	},
 	update: function() {
-		return false;
+		return !!Meteor.user();
 	},
 	remove: function() {
 		return false;
 	},
-	fetch: ['owner'],
-	transform: function() {
-		return false;
-	}
+	fetch: ['owner']
 });
