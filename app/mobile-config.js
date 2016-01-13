@@ -4,8 +4,8 @@ App.info({
 	id: 'uk.org.inspire-me',
 	name: 'Inspire Me',
 	description: 'Inspiring stories for care leavers by care leavers',
-	author: 'L&W',
-	email: 'kevin.campbellwright@niace.org.uk',
+	author: 'Learning and Work Institute',
+	email: 'kevin.campbellwright@learningandwork.org.uk',
 	website: 'http://www.learningandwork.org.uk/',
 	version: '1.0.3'
 });
