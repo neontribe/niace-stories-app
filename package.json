@@ -1,7 +1,7 @@
 {
-  "name": "niace-pstories-app",
+  "name": "niace-stories-app",
   "version": "1.0.3",
-  "description": "The alpha application for NIACE, running on Meteor.",
+  "description": "Stories app running on Meteor.",
   "main": "",
   "directories": {
     "test": "test"
@@ -28,15 +28,10 @@
     "url": "https://github.comneontribe/niace-stories-app/issues"
   },
   "homepage": "https://github.comneontribe/niace-stories-app",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "mongodb": "^1.4.40"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "fibers": "^1.0.8",
     "jshint": "^2.8.0",
     "laika": "^0.3.10",
-    "mongoose": "^4.3.5",
-    "phantomjs": "^1.9.19"
+    "mongoose": "^4.3.5"
   }
 }
