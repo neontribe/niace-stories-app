@@ -4,9 +4,9 @@ App.info({
 	id: 'uk.org.inspire-me',
 	name: 'Inspire Me',
 	description: 'Inspiring stories for care leavers by care leavers',
-	author: 'NIACE',
-	email: 'kevin.campbellwright@niace.org.uk',
-	website: 'http://www.niace.org.uk',
+	author: 'Learning and Work Institute',
+	email: 'kevin.campbellwright@learningandwork.org.uk',
+	website: 'http://www.learningandwork.org.uk/',
 	version: '1.0.3'
 });
 
@@ -44,7 +44,7 @@ App.launchScreens({
 	'android_mdpi_portrait': '../resources/splash/splash-320x480.png', //
 	'android_mdpi_landscape': '../resources/splash/splash-480x320.png', //
 	'android_hdpi_portrait': '../resources/splash/splash-480x800.png', //
-	'android_hdpi_landscape': '../resources/splash/splash-800x480.png', // 
+	'android_hdpi_landscape': '../resources/splash/splash-800x480.png', //
 	'android_xhdpi_portrait': '../resources/splash/splash-720x1280.png', //
 	'android_xhdpi_landscape': '../resources/splash/splash-1280x720.png' //
 });
