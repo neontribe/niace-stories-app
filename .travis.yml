@@ -2,6 +2,17 @@ language: node_js
 node_js:
 - '4.2.3'
 sudo: true
+# hack to allow building modern cpp bins, travis has old g++ compiler
+# found https://github.com/laverdet/node-fibers/issues/249
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+# end hack
 branches:
   only:
   - master
@@ -9,7 +20,6 @@ branches:
 services:
 - mongodb
 before_install:
-#- ./scripts/install_meteor.sh
 - curl https://install.meteor.com/ | sh
 install:
 - npm install --development
