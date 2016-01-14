@@ -1,7 +1,7 @@
 {
-  "name": "niace-pstories-app",
+  "name": "niace-stories-app",
   "version": "1.0.3",
-  "description": "The alpha application for NIACE, running on Meteor.",
+  "description": "Stories app running on Meteor.",
   "main": "",
   "directories": {
     "test": "test"
@@ -22,21 +22,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.comneontribe/niace-stories-app.git"
+    "url": "https://github.com/neontribe/niace-stories-app.git"
   },
   "bugs": {
-    "url": "https://github.comneontribe/niace-stories-app/issues"
+    "url": "https://github.com/neontribe/niace-stories-app/issues"
   },
-  "homepage": "https://github.comneontribe/niace-stories-app",
-  "dependencies": {
-    "mongodb": "^1.4.23",
-    "body-parser": "^1.10.0"
-  },
+  "homepage": "http://inspire-me-live.herokuapp.com",
+  "dependencies": {},
   "devDependencies": {
-    "jshint": "^2.5.5",
-    "laika": "^0.3.9",
-    "phantomjs": "^1.9.10",
-    "mongoose": "^3.8.16",
-    "fibers": "1.0.2"
+    "jshint": "^2.9.1-rc3",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.5"
   }
 }
