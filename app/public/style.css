@@ -1193,6 +1193,9 @@ MESSAGES
 
 @media all and (max-width: 600px) {
 
+	footer .footer-image img {
+		max-width: 100%;
+	}
 	body {
 		font-size: 16px;
 	}
