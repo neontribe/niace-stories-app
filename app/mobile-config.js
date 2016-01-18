@@ -7,7 +7,7 @@ App.info({
 	author: 'Learning and Work Institute',
 	email: 'kevin.campbellwright@learningandwork.org.uk',
 	website: 'http://www.learningandwork.org.uk/',
-	version: '1.1.0'
+	version: '1.1.1'
 });
 
 App.icons({
