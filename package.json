@@ -17,8 +17,8 @@
     "buildForLiveDeploy": "cd app && meteor build --directory ../deploy --server=http://inspire-me-live.herokuapp.com",
     "buildForDevDeploy": "cd app && meteor build --directory ../deploy --server=http://inspire-me-dev.herokuapp.com",
     "buildProdDeps": "cd deploy/bundle/programs/server && npm install",
-    "signAndroid": "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore niace.keystore ./deploy/android/unaligned.apk inspire-me",
-    "alignAndroid": "~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign -v 4 ./deploy/android/unaligned.apk inspire-me.apk"
+    "signAndroid": "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore niace.keystore ./deploy/android/release-unsigned.apk",
+    "alignAndroid": "~/.meteor/android_bundle/android-sdk/build-tools/20.0.0/zipalign -v 4 ./deploy/android/release-unsigned.apk inspire-me.apk"
   },
   "repository": {
     "type": "git",
