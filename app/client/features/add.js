@@ -1,5 +1,8 @@
+var submitting = false;
+
 Template.add.rendered = function() {
 	$('textarea').autosize();
+	submitting = false;
 };
 
 Template.add.events({
@@ -11,11 +14,13 @@ Template.add.events({
 			story: $('#story').val()
 		};
 		// honeypot to fool spam bots
-		if( $('#check').val() !== '' ) {
+		if( $('#check').val() !== '' && !submitting ) {
 			return;
 		} else {
+			submitting = true;
 			// call the share method for stories
 			Meteor.call('share', story, function(errors, data) {
+				submitting = false;
 				if( errors ) {
 					// set the errors session variable with the method errors array
 					Session.set( 'errors', errors.reason );
