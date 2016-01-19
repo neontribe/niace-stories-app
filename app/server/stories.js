@@ -45,19 +45,22 @@ Meteor.methods({
 			if (peopleWhoCare.length) {
 				// Email.error throws. Just swallow the message
 				// TODO implement some sort of logging
-				try {
-					Email.send({
-						from: 'no-reply@inspire-me.org.uk',
-						to: peopleWhoCare,
-						subject: 'A new story has been added',
-						html: filloutTemplate(emailTemplate, {
-							siteURL: (process.env.ROOT_URL || '').trim().replace(/\/$/, ''),
-							id: storyId
-						})
-					});
-				} catch(e) {
-					console.log('failed to send mail', e);
-				}
+				// don't hold up the reply
+				setImmediate(function() {
+					try {
+						Email.send({
+							from: 'no-reply@inspire-me.org.uk',
+							to: peopleWhoCare,
+							subject: 'A new story has been added',
+							html: filloutTemplate(emailTemplate, {
+								siteURL: (process.env.ROOT_URL || '').trim().replace(/\/$/, ''),
+								id: storyId
+							})
+						});
+					} catch(e) {
+						console.log('failed to send mail', e);
+					}	
+				});
 			}
 		} else {
 			// throw an error to populate the error variable on the method callback
