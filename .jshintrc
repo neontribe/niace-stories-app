@@ -41,6 +41,7 @@
 		"jQuery": true,
 		"Email": true,
 		"Assets": true,
-		"Watchers": true
+		"Watchers": true,
+		"setImmediate": true
 	}
 }
