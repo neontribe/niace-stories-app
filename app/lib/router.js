@@ -28,19 +28,25 @@ function pageQuery() {
 }
 
 Router.map(function() {
-	this.route('/add');
-	this.route('/thanks');
-	this.route('/edited');
-	this.route('/themes');
-	this.route('/video');
-	this.route('/privacy');
+	function route(path) {
+		Router.route(path, {
+			name: path.replace(/\//g, '')
+		});
+	}
+
+	route('/add');
+	route('/thanks');
+	route('/edited');
+	route('/themes');
+	route('/video');
+	route('/privacy');
 	this.route('/', function() {
 		this.render('themes');
 	}, {
 		name: 'home'
 	});
-	this.route('/login');
-	this.route('/register');
+	route('/login');
+	route('/register');
 
 	this.route('/manage', {
 		data: function() {
@@ -50,7 +56,7 @@ Router.map(function() {
 		}
 	});
 
-	this.route('/me');
+	route('/me');
 
 	this.route('glossary', {
 		path: '/glossary'
@@ -188,10 +194,10 @@ var requireLogin = function() {
 	if( !Meteor.user() ) {
 		if( Meteor.loggingIn() ) {
 			this.render('loading');
-			this.next();
 		} else {
 			this.render('login');
 		}
+		this.next();
 	} else {
 		this.next();
 	}
